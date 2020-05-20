@@ -13,6 +13,10 @@
 		6A7186E12474BCD600F71930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7186DF2474BCD600F71930 /* Main.storyboard */; };
 		6A7186E32474BCD600F71930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7186E22474BCD600F71930 /* Assets.xcassets */; };
 		6A7186E62474BCD600F71930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7186E42474BCD600F71930 /* LaunchScreen.storyboard */; };
+		6A7186F12474BE6D00F71930 /* FullMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7186F02474BE6D00F71930 /* FullMenuViewController.swift */; };
+		6A7186F32474BE8300F71930 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7186F22474BE8300F71930 /* CellView.swift */; };
+		6A7186F52474BE9500F71930 /* FullMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7186F42474BE9500F71930 /* FullMenuModel.swift */; };
+		6A7186F72474BEA100F71930 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7186F62474BEA100F71930 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6A7186E22474BCD600F71930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7186E52474BCD600F71930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A7186E72474BCD600F71930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7186F02474BE6D00F71930 /* FullMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMenuViewController.swift; sourceTree = "<group>"; };
+		6A7186F22474BE8300F71930 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		6A7186F42474BE9500F71930 /* FullMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMenuModel.swift; sourceTree = "<group>"; };
+		6A7186F62474BEA100F71930 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		6A7186D82474BCD600F71930 /* Aramark_MySQL-TEST */ = {
 			isa = PBXGroup;
 			children = (
+				6A7186ED2474BDBD00F71930 /* ViewControllers */,
+				6A7186EE2474BDD900F71930 /* Views */,
+				6A7186EF2474BDEE00F71930 /* Models */,
 				6A7186D92474BCD600F71930 /* AppDelegate.swift */,
 				6A7186DB2474BCD600F71930 /* SceneDelegate.swift */,
-				6A7186DD2474BCD600F71930 /* ViewController.swift */,
 				6A7186DF2474BCD600F71930 /* Main.storyboard */,
 				6A7186E22474BCD600F71930 /* Assets.xcassets */,
 				6A7186E42474BCD600F71930 /* LaunchScreen.storyboard */,
 				6A7186E72474BCD600F71930 /* Info.plist */,
 			);
 			path = "Aramark_MySQL-TEST";
+			sourceTree = "<group>";
+		};
+		6A7186ED2474BDBD00F71930 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A7186DD2474BCD600F71930 /* ViewController.swift */,
+				6A7186F02474BE6D00F71930 /* FullMenuViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6A7186EE2474BDD900F71930 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A7186F22474BE8300F71930 /* CellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A7186EF2474BDEE00F71930 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A7186F42474BE9500F71930 /* FullMenuModel.swift */,
+				6A7186F62474BEA100F71930 /* Network.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7186DE2474BCD600F71930 /* ViewController.swift in Sources */,
+				6A7186F32474BE8300F71930 /* CellView.swift in Sources */,
 				6A7186DA2474BCD600F71930 /* AppDelegate.swift in Sources */,
+				6A7186F52474BE9500F71930 /* FullMenuModel.swift in Sources */,
+				6A7186F12474BE6D00F71930 /* FullMenuViewController.swift in Sources */,
+				6A7186F72474BEA100F71930 /* Network.swift in Sources */,
 				6A7186DC2474BCD600F71930 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
